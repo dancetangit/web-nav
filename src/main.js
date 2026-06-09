@@ -280,15 +280,7 @@ document.addEventListener('DOMContentLoaded', function() {
         externalLinks.forEach(link => {
             link.setAttribute('rel', 'noopener noreferrer');
             
-            // 添加外部链接标识
-            if (!link.querySelector('.external-icon')) {
-                const icon = document.createElement('span');
-                icon.className = 'external-icon';
-                icon.innerHTML = ' ↗';
-                icon.style.fontSize = '0.8em';
-                icon.setAttribute('aria-hidden', 'true');
-                link.appendChild(icon);
-            }
+            // 不再添加外部链接箭头标识（UI 保持简洁）
         });
     }
     
