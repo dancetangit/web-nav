@@ -619,6 +619,79 @@ body {
     font-size: 1.25rem;
     margin-bottom: 1rem;
 }
+/* 进一步精简以适配单屏显示（减少间距、字体、卡片高度） */
+.compact-mode {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.compact-mode html,
+.compact-mode body {
+    height: 100%;
+}
+
+.compact-mode .header {
+    padding: 0.4rem 0;
+}
+
+.compact-mode .site-title {
+    font-size: 1.1rem;
+}
+
+.compact-mode .main {
+    padding: 0.5rem 0 0.8rem;
+    height: calc(100vh - 56px - 44px);
+    overflow: hidden;
+}
+
+.compact-mode .footer {
+    padding: 0.6rem 0;
+}
+
+.compact-mode .websites-section {
+    max-height: 100%;
+}
+
+.compact-mode .websites-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.6rem;
+}
+
+.compact-mode .card {
+    padding: 0.6rem;
+    font-size: 0.92rem;
+}
+
+.compact-mode .website-name {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.compact-mode .website-desc {
+    font-size: 0.82rem;
+    margin-bottom: 0.4rem;
+}
+
+.compact-mode .website-url {
+    font-size: 0.75rem;
+    padding: 0.15rem 0.35rem;
+}
+
+.compact-mode .category {
+    margin-bottom: 1rem;
+}
+
+.compact-mode .search-section {
+    margin-bottom: 1rem;
+}
+
+.compact-mode .search-input {
+    padding: 0.6rem 0.8rem;
+}
+
+.compact-mode .search-btn {
+    padding: 0.6rem 1rem;
+}
 /* ============================================
    作者联系信息样式
    ============================================ */
